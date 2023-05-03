@@ -2,11 +2,13 @@
   "name": "wp-bot",
   "version": "1.0.0",
   "description": "whatsapp bot",
-  "main": "app.js",
+  "main": "src/app.ts",
   "type": "commonjs",
   "scripts": {
     "start": "pm2 start ecosystem.config.cjs",
-    "dev": "nodemon app.js"
+    "dev": "node ./dist/app.js",
+    "watch": "nodemon src/app.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "whatsapp-web.js": "^1.19.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
   }
 }
