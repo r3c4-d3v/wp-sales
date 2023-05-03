@@ -2,7 +2,7 @@ module.exports = {
     apps: [
         {
             name: "wp-bot",
-            script: "index.js",
+            script: "app.js",
             interpreter: "/usr/bin/node",
         },
     ],

@@ -102,7 +102,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -115,7 +114,7 @@ dist
 
 # DynamoDB Local files
 .dynamodb/
-.wwebjs_auth/
+src/.wwebjs_auth/
 # TernJS port file
 .tern-port
 
@@ -128,6 +127,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-
+.wwebjs_auth/
 .idea

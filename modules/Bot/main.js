@@ -41,38 +41,15 @@ class WhatsappBot {
             console.log('BOT ONLINE');
         });
 
-        this.client.on('message', async (message) => {
-            if (/!gpt/i.test(message.body)) {
-                const gpt = new OpenAIHandler();
-
-                if (message.body.length < 10) {
-                    await message.reply("Sua mensagem deve conter 10 letras ou mais.")
-                        .catch(replyError => console.error(replyError));
-                    return false;
-                }
-                const response = await gpt.executePrompt(message.body)
-                    .catch(error => console.error(error));
-
-                await message.reply(response.data.choices[0].text)
-                    .catch(replyError => console.error(replyError));
-            }
-        });
-
         this.client.on('message', async message => {
-            if (/!exbom/i.test(message.body)) {
-                message.reply(message.body.slice(6))
+            if (/!cmd/i.test(message.body)) {
+                message.reply(message.body.slice(4))
                     .catch(replyError => console.error(replyError));
             }
         });
 
-        this.client.on('message', async message => {
-            if (/!propaganddati/i.test(message.body)) {
-                message.reply("!propaganddati")
-                    .catch(replyError => console.error(replyError));
-            }
-        });
-
-        return this.client.initialize().catch(clientError => console.error(clientError));
+        return this.client.initialize()
+            .catch(clientError => console.error(clientError));
     }
 }
 
