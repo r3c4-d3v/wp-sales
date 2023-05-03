@@ -37,11 +37,17 @@ Whatsapp bot
 * `typescript (^5.0.4)`
 
 ### Installation
-* Clone this repository on your local machine using the command git clone https://github.com/r3c4-d3v/wp-bot.git.
+* Clone this repository on your local machine using the command git clone https://github.com/r3c4-d3v/wp-sales.git.
 
 
 * Navigate to the root directory of the project and run the command npm install to install the necessary dependencies.
 Configuration
+
+
+* Navigate to the root directory of the project and run `npm run build`
+
+
+* Navigate to the root directory of the project and run `npm run dev`
 
 
 * Rename .env.example file to .env file in the project root directory and fill it with keys.
