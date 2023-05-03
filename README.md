@@ -16,22 +16,25 @@ Whatsapp bot
 * `chore` Miscellaneous commits e.g. modifying `.gitignore`
   
 ### Used technologies
-* `Node.js (v18.16.0)`
+* `Node.js (^18.16.0)`
 
 
-* `npm (v6.14.15)`
+* `npm (^6.14.15)`
 
 
-* `whatsapp-web.js (v1.19.5)`
+* `whatsapp-web.js (^1.19.5)`
 
 
-* `dotenv (v16.0.3)`
+* `dotenv (^16.0.3)`
 
 
-* `openai (v3.2.1)`
+* `qrcode-terminal (^0.12.0)`
 
 
-* `qrcode-terminal (v0.12.0)`
+* `nodemon (^2.0.22)`
+
+
+* `typescript (^5.0.4)`
 
 ### Installation
 * Clone this repository on your local machine using the command git clone https://github.com/r3c4-d3v/wp-bot.git.
@@ -41,4 +44,4 @@ Whatsapp bot
 Configuration
 
 
-* Rename .env.example file to .env file in the project root directory and fill it with OpenIA key.
+* Rename .env.example file to .env file in the project root directory and fill it with keys.
