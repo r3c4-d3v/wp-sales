@@ -1,11 +1,7 @@
-import WhatsappBot from "./modules/Bot/main";
+import WhatsappBot from "./modules/Bot";
 
 const bot = new WhatsappBot();
 
 bot.initialize()
-    .then((): void => {
-        console.log("Bot inicializado")
-    })
-    .catch((error: any): void => {
-        console.log(error)
-    });
+    .catch((error: any): void => console.log(error))
+    .finally((): void => console.log("Bot inicializado"));

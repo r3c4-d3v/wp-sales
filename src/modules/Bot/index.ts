@@ -12,13 +12,11 @@ export default class WhatsappBot {
         }
         WhatsappBot.#instance = this;
 
-        const authStrategy = new LocalAuth();
-
         this.#configuration = {
             puppeteer: {
                 args: ['--no-sandbox']
             },
-            authStrategy
+            authStrategy: new LocalAuth()
         }
 
         this.#client = new Client(this.#configuration);
@@ -26,11 +24,8 @@ export default class WhatsappBot {
 
     initialize() {
         this.#client.on('qr', (qr: any) => {
+            console.log(qr)
             qrcode.generate(qr, { small: true })
-        });
-
-        this.#client.on('ready', async (): Promise<void> => {
-            console.log('BOT ONLINE');
         });
 
         this.#client.on('message', async (message: any) => {

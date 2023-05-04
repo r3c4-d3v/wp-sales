@@ -7,7 +7,8 @@
   "scripts": {
     "start": "pm2 start ecosystem.config.cjs",
     "dev": "node ./dist/app.js",
-    "watch": "nodemon src/app.ts",
+    "dev-inspect": "node --inspect ./dist/app.js",
+    "watch": "nodemon ./dist/app.js",
     "build": "tsc"
   },
   "repository": {
