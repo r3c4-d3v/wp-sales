@@ -1,5 +1,5 @@
 # Wp-bot
-Whatsapp bot
+Whatsapp bot with typescript
 
 ### Commits convention.
 * Always use dot `.` at the end of commit. 
